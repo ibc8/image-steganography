@@ -1,5 +1,6 @@
 # What is it?
-[Russian readme](https://github.com/ibc8/image-steganography/blob/main/readme_ru.md)
+[Russian readme](https://github.com/ibc8/image-steganography/blob/main/readme_ru.md) 
+
 A simple code for digital image steganography to hide text, supports all Unicode characters and works with .png images with the possibility of further expansion to .jpg, .bpm, etc.
 ____
 # How to work?
