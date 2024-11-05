@@ -1,0 +1,14 @@
+{
+  "name": "stega",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "encode": "index.js"
+  },
+  "author": "ibc",
+  "license": "ISC",
+  "description": "",
+  "Devdependencies": {
+    "sharp": "^0.33.5"
+  }
+}
