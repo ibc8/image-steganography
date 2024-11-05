@@ -1,8 +1,8 @@
 const sharp = require('sharp');
 
 
-sharp('output.png')
-    .ensureAlpha() //& Чек альфа канал
+sharp('output.png') //! изменить на jpg
+    // .ensureAlpha() //& Чек альфа канал, для jpg убрать
     .raw() //& Необработанные данные
     .toBuffer({ resolveWithObject: true })
     .then(({ data, info }) => {

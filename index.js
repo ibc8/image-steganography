@@ -29,8 +29,8 @@ function red(red, array) {
     return red;
 }
 
-sharp('input.png')
-    .ensureAlpha() //& Чек альфа канал
+sharp('input.png') //! изменить на jpg
+    .ensureAlpha() //& Чек альфа канал, для jpg убрать
     .raw() //& Получите необработанные данные
     .toBuffer({ resolveWithObject: true })
     .then(({ data, info }) => {
@@ -66,7 +66,8 @@ sharp('input.png')
 
         console.log("Текст:", decodedText);
         return sharp(data, { raw: { width, height, channels: 4 } })
-            .toFile('output.png');
+            //! .jpeg({ quality: 90 }) // необходим для jpg
+            .toFile('output.png'); //! изменить на jpg
     })
     .then(() => {
         console.log('Изображение успешно обработано и сохранено!');
