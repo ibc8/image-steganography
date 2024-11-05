@@ -1,11 +1,11 @@
-# Что это?
-Простой код для цифровой стеганографии изображений для скрытия текста, поддерживает все символы Юникода и работает с .png картинками с возможностью дальнейшего расширения до .jpg, .bpm и т. д.
+# What is it?
+A simple code for digital image steganography to hide text, supports all Unicode characters and works with .png images with the possibility of further expansion to .jpg, .bpm, etc.
 ____
-# Как работать?
-- ***index.js*** отвечает за кодирование
-- ***prefix.js*** отвечает за декодирование
-- Также в репозитории есть input.png - можно заменить своей картинкой, именно здесь происходит добавление в картинку текста, output.png - картинка, появляющаяся после работы программы, там находится добавленный текст.
-# Как начать?
-Введите команду ```npm i sharp```
-Введите команду ```node index.js```
-Введите команду ```node prefix.js```
+# How to work?
+- index.js is responsible for encoding
+- the prefix.js is responsible for decoding
+- There is also an input.png in the repository - you can replace it with your own picture, this is where the text is added to the picture, output.png is the picture that appears after the program is running, the added text is there.
+# How do I get started?
+Enter the command ```npm i sharp``` 
+Enter the command ```node index.js``` 
+Enter the command ```node prefix.js```
