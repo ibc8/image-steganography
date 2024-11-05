@@ -1,5 +1,6 @@
 # Что это?
-[English readme](https://github.com/ibc8/image-steganography/blob/main/README.md)) 
+[English readme](https://github.com/ibc8/image-steganography/blob/main/README.md)
+
 Простой код для цифровой стеганографии изображений для скрытия текста, поддерживает все символы Юникода и работает с .png картинками с возможностью дальнейшего расширения до .jpg, .bpm и т. д.
 ____
 # Как работать?
