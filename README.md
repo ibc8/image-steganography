@@ -8,6 +8,4 @@ ____
 - the prefix.js is responsible for decoding
 - There is also an input.png in the repository - you can replace it with your own picture, this is where the text is added to the picture, output.png is the picture that appears after the program is running, the added text is there.
 # How do I get started?
-Enter the command ```npm i sharp``` 
-Enter the command ```node index.js``` 
-Enter the command ```node prefix.js```
+Enter the command ```npm i sharp```, ```node index.js```, ```node prefix.js```
