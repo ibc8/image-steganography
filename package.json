@@ -10,5 +10,8 @@
   "description": "",
   "Devdependencies": {
     "sharp": "^0.33.5"
+  },
+  "dependencies": {
+    "sharp": "^0.33.5"
   }
 }

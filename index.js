@@ -1,5 +1,5 @@
 const sharp = require('sharp');
-let inputText = ("Hello World!") //ввод текста
+let inputText = ("Привет, Алиса!") //ввод текста
 inputText += "   ";
 const utf8Encoded = Buffer.from(inputText, 'utf8');
 //! console.log(utf8Encoded);
@@ -41,13 +41,19 @@ sharp('input.png') //! изменить на jpg
         for (let y = 0; y < height; y++) {
             for (let x = 0; x < width; x++) {
                 const index = (width * y + x) * 4; //& Индекс для RGBA
-                if (count <= 21) { //! контрольная сумма
+                if (count <= 20) { //! контрольная сумма
                     data[index] = red(data[index], arrayFromLength[count]);
                     count += 1;
                     //! console.log(arrayFromLength[count]);
                     continue;
                 }
-                if ((count <= textLength)) {
+                if (count == 21) { //! контрольная сумма
+                    data[index] = data[index];
+                    count += 1;
+                    //! console.log(arrayFromLength[count]);
+                    continue;
+                }
+                if ((count <= (textLength + 1))) {
                     data[index] = red(data[index], utf8Array[count2]);
                     count2 += 1;
                     count += 1;
