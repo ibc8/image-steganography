@@ -17,7 +17,7 @@ const textLength = utf8Array.length;
 //& Преобразуем число в бинарную строку
 const binaryString = textLength.toString(2);
 
-//& Дополняем нулями слева до 32 бит (4 байта)
+//& Дополняем нулями слева до 21 бит
 const paddedBinaryString = binaryString.padStart(21, '0');
 
 //& Преобразуем строку в массив из 0 и 1
@@ -57,6 +57,9 @@ sharp('input.png') //! изменить на jpg
                     data[index] = red(data[index], utf8Array[count2]);
                     count2 += 1;
                     count += 1;
+                }
+                if (count == (textLength + 2)) {
+                    data[index + 2] = red(data[index + 2], 255)
                 }
             }
         }
